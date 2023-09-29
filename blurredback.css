@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+}
+.container{height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background: url("https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1118&q=80");
+    background-size: cover;
+    transition: filter 0.8;
+}
+/*Unsplash,name,copy image address*/
+h1
+{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 1px 1.5px red;
+}
+.btn
+{
+    border-radius: 5px;
+    padding: 10px 3px;
+    width: 200px;
+    cursor: pointer;
+    background-color: goldenrod;
+    border: none;
+    font-size: 20px;
+}
+.btn:hover{
+    filter: brightness(0.9);
+    color: white;
+}
+.active.container{
+    filter: blur(5px) brightness(0.7);
+}
+.pop{
+    width: 300px;
+    position: fixed;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: sandybrown;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    background: url("https://images.unsplash.com/photo-1478361000558-6f397482ffbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80");
+    background-size: cover;
+    box-shadow: 2px 2px 1.5px slateblue;
+    opacity: 1;
+    transition: all ease .7s;
+}
+h4{
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+    font-size: 30px;
+}
+label{color: slateblue;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+.popbtn{
+    background-color: slateblue;
+    color: orangered;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5pxpx;
+    border: 1px solid silver;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px 0;
+}
+input{border: 1px solid cornflowerblue;width: 90%;margin: 10px 0;padding: 10px;
+    box-shadow: 1px 1px 1px lightgreen;font-size: 20px;border-radius: 5px;
+text-align: center;}
+.close{position: absolute;right: 20px;cursor: pointer;top: 10px;}
+.close:hover{color: orange;}
+.active.pop{visibility: hidden;opacity: 0;top: 10%;}
